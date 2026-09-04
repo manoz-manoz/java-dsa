@@ -1,0 +1,13 @@
+public class Sum_Functional_rec {
+    public static int sum(int n)
+    {
+        if(n<1)
+            return 0;
+        return n+sum(n-1);
+    }
+    public static void main(String ar[])
+    {
+        System.out.println(sum(5));
+    }
+    
+}

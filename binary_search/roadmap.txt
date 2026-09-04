@@ -1,0 +1,206 @@
+DAY 1 — Classic Binary Search + Bounds
+Learn
+Binary Search intuition
+Search space
+low, high, mid
+Loop conditions
+mid calculation
+Lower Bound
+Upper Bound
+Floor / Ceil
+First / Last occurrence
+Problems
+Binary Search
+Lower Bound
+Upper Bound
+Search Insert Position
+Floor and Ceil in Sorted Array
+Find First and Last Position
+Count Occurrences
+Your goal
+
+By the end of Day 1 you should be able to derive:
+
+first >= target
+first > target
+last <= target
+last < target
+
+without memorizing separate solutions.
+
+🟢 DAY 2 — Rotated Arrays + Special Binary Search
+Learn
+Normal sorted array
+        ↓
+Rotated sorted array
+        ↓
+Which half is sorted?
+        ↓
+Can target exist there?
+Problems
+Search in Rotated Sorted Array
+Search in Rotated Sorted Array II
+Find Minimum in Rotated Sorted Array
+Rotation Count
+Single Element in a Sorted Array
+Find Peak Element
+Peak Index in a Mountain Array
+Important
+
+Don't memorize:
+
+if (nums[low] <= nums[mid])
+
+Instead understand:
+
+Why does knowing one half is sorted allow us to eliminate the other half?
+
+🟡 DAY 3 — Binary Search on Answer I
+
+This is a major milestone.
+
+Learn
+
+There may be no sorted array.
+
+Instead:
+
+Possible answers
+       ↓
+     guess X
+       ↓
+  Is X feasible?
+       ↓
+   YES / NO
+       ↓
+ eliminate half
+Problems
+Sqrt(x)
+Nth Root
+Koko Eating Bananas
+Minimum Number of Days to Make M Bouquets
+Smallest Divisor Given a Threshold
+Capacity to Ship Packages Within D Days
+Your goal
+
+For every problem, identify:
+
+LOW = ?
+HIGH = ?
+CHECK(x) = ?
+
+before writing binary-search code.
+
+🟡 DAY 4 — Binary Search on Answer II
+Problems
+K-th Missing Positive Number
+Aggressive Cows
+Allocate Books
+Painter's Partition
+Split Array Largest Sum
+Minimize Maximum Distance to Gas Station
+Magnetic Force Between Two Balls
+Minimum Limit of Balls in a Bag
+Main skill
+
+Recognize:
+
+Minimum answer
+N N N N Y Y Y Y
+        ↑
+     minimum
+
+versus:
+
+Maximum answer
+Y Y Y Y N N N N
+        ↑
+     maximum
+
+This distinction must become automatic.
+
+🔴 DAY 5 — Advanced Binary Search
+Learn
+
+Binary Search + Counting
+
+Binary Search + Greedy
+
+Binary Search + Partition
+
+Problems
+K-th Smallest Pair Distance
+K-th Smallest Number in Multiplication Table
+Maximum Candies Allocated to K Children
+Minimum Time to Complete Trips
+Maximum Running Time of N Computers
+Minimum Speed to Arrive on Time
+Successful Pairs of Spells and Potions
+Find K Closest Elements
+Main question
+
+For a candidate mid:
+
+Can I efficiently count/check how many possibilities satisfy the condition?
+
+🔴 DAY 6 — Two Sorted Arrays + 2D Binary Search
+Two sorted arrays
+Median of Two Sorted Arrays
+K-th Element of Two Sorted Arrays
+2D
+Row With Maximum Number of 1s
+Search a 2D Matrix
+Search a 2D Matrix II
+Find Peak Element II
+Median in a Row-Wise Sorted Matrix
+Most important concept
+
+For Median of Two Sorted Arrays:
+
+A = [1 3 | 8]
+B = [2 7 | 10 12]
+          ↑
+      partition
+
+We're not searching for a number.
+
+We're searching for the correct partition.
+
+🔥 DAY 7 — Interview Simulation + Weak Areas
+
+No new major concepts.
+
+Round 1 — Easy
+
+Solve without help:
+
+Binary Search
+Lower Bound
+Search Insert Position
+First Occurrence
+Find Minimum Rotated Array
+Round 2 — Medium
+Rotated Sorted Array
+Single Element
+Peak Element
+Koko Eating Bananas
+Ship Packages
+Aggressive Cows
+Round 3 — Hard
+Split Array Largest Sum
+K-th Smallest Pair Distance
+Median of Two Sorted Arrays
+Median of Row-Wise Sorted Matrix
+Round 4 — Unseen Problems
+
+I'll give you new Binary Search problems that you haven't practiced.
+
+You must determine:
+
+1. Is Binary Search applicable?
+2. What is the search space?
+3. What is monotonic?
+4. What does mid represent?
+5. What condition do I check?
+6. Which half can I eliminate?
+7. What does the final answer represent?
