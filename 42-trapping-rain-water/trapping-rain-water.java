@@ -10,6 +10,7 @@ class Solution {
             else
             res+=rmax-height[r--];
         }
+        
         return res;
     }
 }
